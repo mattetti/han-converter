@@ -13,6 +13,16 @@ module HanConverter
     end.join('')
   end
   
+  def to_traditional
+    self.chars.split(//).map do |char|
+      if new_char_h = traditional_to_simplified.detect{|k,v| v == char.string}
+        new_char_h.first
+      else
+        char.string
+      end
+    end.join('')
+  end
+  
 end
 
 class String

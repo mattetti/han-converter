@@ -6,8 +6,8 @@ Rakefile
 config/hoe.rb
 config/requirements.rb
 lib/han-converter.rb
+lib/converter_table.rb
 lib/han-converter/version.rb
-lib/han-converter.rb
 log/debug.log
 script/destroy
 script/generate
@@ -16,8 +16,9 @@ setup.rb
 tasks/deployment.rake
 tasks/environment.rake
 tasks/website.rake
-test/test_han-converter.rb
-test/test_helper.rb
+spec/han-converter_spec.rb
+spec/spec.opts
+spec/spec_helper.rb
 website/index.html
 website/index.txt
 website/javascripts/rounded_corners_lite.inc.js
