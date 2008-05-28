@@ -1,6 +1,6 @@
 $:.unshift File.dirname(__FILE__)
 require 'rubygems'
-require 'Activesupport'
+require 'activesupport'
 require 'converter_table'
 $KCODE = 'UTF8'
 
