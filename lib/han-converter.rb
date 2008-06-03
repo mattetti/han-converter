@@ -15,11 +15,7 @@ module HanConverter
   
   def to_traditional
     self.chars.split(//).map do |char|
-      if new_char_h = traditional_to_simplified.detect{|k,v| v == char.string}
-        new_char_h.first
-      else
-        char.string
-      end
+      simplified_to_traditional[char.string] || char.string
     end.join('')
   end
   
